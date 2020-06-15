@@ -1,0 +1,32 @@
+{
+  "fastFood": [
+    {
+      "nameOfDish": "Burger",
+      "description": "good",
+      "picture": "https://i.ytimg.com/vi/xXFRe457uoI/maxresdefault.jpg",
+      "ingredients": "meat, lettuce, onions",
+      "id": 1
+    }
+  ],
+  "vegetarianFood": [
+    {
+      "nameOfDish": "Eierspeiß",
+      "description": "Gut",
+      "picture": "",
+      "ingredients":"lettuce, eggs",
+      "id": 1
+    }
+  ],
+  "asiaFood": [],
+  "veganFood": [],
+  "indianFood": [
+    {
+      "nameOfDish": "Curry",
+      "description": "asyxcvafhaetqt",
+      "picture": "",
+      "ingredients":"curry",
+      "id": 1
+    }
+  ],
+  "russianFood": []
+}

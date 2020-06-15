@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+    .column {
+        float: left;
+        padding: 10px;
+        height: 1500px;
+        text-align: center;
+    }
+      
+    .left, .right {
+        width: 25%;
+        background: aquamarine;
+        text-align: center;
+    }
+       
+    .middle {
+        width: 50%;
+    }
+        
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .loginbox{
+          width: 1000px;
+          height: 300px;
+          background: grey;
+          color: #fff;
+          top: 50%;
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%,-50%);
+          box-sizing: border-box;
+          padding: 70px 30px;
+        }
+        .dot {
+          height: 50px;
+          width: 50px;
+          background-color: aquamarine;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        .dot:hover{
+          background-color: grey;
+        }
+        .borderDemo {
+          border-width: 7px;
+          border-style: solid;
+          border-color: #3BA428;
+          border-radius: 20px 20px 20px 20px;
+        }
+        </style>
+
+    <head>
+        <title>Create new Recipe</title>
+            <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+            <link href="../css/freelancer.min.css" rel="stylesheet">
+        </head>
+        <body id="page-top">
+          <header class="masthead bg-secondary text-white text-center">
+            <h3 class="text-uppercase mb-0"><a href="./Library.html">Library</a></h3>
+            <br>
+            <h1 class="masthead-heading text-uppercase mb-0">Create your own Recipe</h1>
+          </header>
+            <div class="column left"></div>
+            <div class="column middle">
+                <label for="title">Name of Dish</label>
+                <input id="title" name="title"><br>
+
+                <select id="myselect">
+                  <option value="">Choose an Foodtype:</option>
+                  <option value="fastFood">Fast Food</option>
+                  <option value="vegetarianFood">Vegetarian Food</option>
+                  <option value="asiaFood">Asia Food</option>
+                  <option value="veganFood">Vegan Food</option>
+                  <option value="indianFood">Indian Food</option>
+                  <option value="russianFood">Russian Food</option>
+                </select>
+                <br>
+
+                <label for="picture">Picture(URL)</label>
+                <input id="picture" name="picture"><br>
+
+                <label for="ingredients">ingredients</label>
+                <input id="ingredients" name="ingredients"><br>
+
+                <label for="description">Description</label>
+                <input id="description" name="description">
+                <button onclick="submit()">Add as Recipe</button>
+                <script src ="Library.js"></script>
+
+
+            </div>
+            <div class="column right"></div>
+        </body>
+        </html>
+</html>

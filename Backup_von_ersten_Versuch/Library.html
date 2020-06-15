@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    
+<style>
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 1500px;
+  text-align: center;
+}
+
+.left, .right {
+  width: 25%;
+  background: aquamarine;
+  text-align: center;
+}
+
+.middle {
+  width: 50%;
+}
+.loginbox{
+  width: 1000px;
+  height: 300px;
+  background: grey;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot:hover{
+  background-color: grey;
+}
+.borderDemo {
+  border-width: 7px;
+  border-style: solid;
+  border-color: #3BA428;
+  border-radius: 20px 20px 20px 20px;
+}
+tr{
+  width: 500px;
+  height: 250px;
+}
+</style>
+
+<head>
+<title>Recipes</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="../css/freelancer.min.css" rel="stylesheet">
+</head>
+<body id="page-top" onload="initialize()">
+  <header class="masthead bg-secondary text-white text-center">
+    <h3 class="text-uppercase mb-0"><a href="../index.html">Startpage</a></h3>
+    <br>
+    <h1 class="masthead-heading text-uppercase mb-0">Recipes
+      <a href="CreateRecipe.html" class="dot">+</a>
+    </h1>
+
+    </header>
+        <div class="column left">
+        </div>
+        <div class="column middle">
+          <select id="myselect" onchange="change_myselect(this.value)">
+            <option value="">Choose an Foodtype:</option>
+            <option value="fastFood">Fast Food</option>
+            <option value="vegetarianFood">Vegetarian Food</option>
+            <option value="asiaFood">Asia Food</option>
+            <option value="veganFood">Vegan Food</option>
+            <option value="indianFood">Indian Food</option>
+            <option value="russianFood">Russian Food</option>
+          </select>
+          <p id="demo"></p>
+
+          <script src="Library.js"></script>
+        
+        </div>
+
+        <div class="column right">
+        </div>
+</body>
+</html>
