@@ -9847,3 +9847,10 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #1a252f;
 }
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background-color: aquamarine;
+  padding: 10px;
+}

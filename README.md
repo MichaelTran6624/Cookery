@@ -22,4 +22,3 @@ We are doing this project, because we think that a recipe website could be very 
 Philipp Kerschbaum & Michael Tran
 ## Project Risk Management
 One person can get ill, the project could get lost by technical issues.
-
