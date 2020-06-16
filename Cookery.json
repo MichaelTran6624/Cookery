@@ -6,6 +6,13 @@
       "picture": "https://i.ytimg.com/vi/xXFRe457uoI/maxresdefault.jpg",
       "ingredients": "meat, lettuce, onions",
       "id": 1
+    },
+    {
+      "nameOfDish": "Pizza",
+      "description": "good",
+      "picture": "",
+      "ingredients": "dough, cheese, onions",
+      "id": 2
     }
   ],
   "vegetarianFood": [

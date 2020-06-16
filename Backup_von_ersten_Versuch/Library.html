@@ -48,8 +48,14 @@
   border-radius: 20px 20px 20px 20px;
 }
 tr{
-  width: 500px;
-  height: 250px;
+  width: auto;
+  height: auto;
+  text-align: left;
+  vertical-align: top;
+}
+img{
+  max-width: 100% ;
+  height : auto;
 }
 </style>
 
@@ -73,7 +79,7 @@ tr{
         </div>
         <div class="column middle">
           <select id="myselect" onchange="change_myselect(this.value)">
-            <option value="">Choose an Foodtype:</option>
+            <option value="none" selected disabled hidden>Choose an Foodtype:</option>
             <option value="fastFood">Fast Food</option>
             <option value="vegetarianFood">Vegetarian Food</option>
             <option value="asiaFood">Asia Food</option>
@@ -81,6 +87,10 @@ tr{
             <option value="indianFood">Indian Food</option>
             <option value="russianFood">Russian Food</option>
           </select>
+
+          <label for="ingredient">Ingredient:</label>
+          <input type="text" id="ingredient" name="ingredient">
+          <button onclick="filter_by_ingredient()">Submit</button>
           <p id="demo"></p>
 
           <script src="Library.js"></script>

@@ -37,7 +37,7 @@ function change_myselect(sel) {
       txt += "<table border='1'>"
       myObj = JSON.parse(this.responseText);
       for (x in myObj) {
-        txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>" + myObj[x].nameOfDish + "</td></tr><tr><td>" + myObj[x].description + "</td></tr>";
+        txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Description<br>" + myObj[x].description + "</td></tr>";
       }
       txt += "</table>";
       document.getElementById("demo").innerHTML = txt;
@@ -47,7 +47,8 @@ function change_myselect(sel) {
   xmlhttp.send();
 }
 
-function filter_by_ingredient(input){
+function filter_by_ingredient(){
+  var input = document.getElementById("ingredient");
   var obj, dbParam, xmlhttp, myObj, x, txt = "";
   var newurl = url + sel;
   obj = { table: sel, limit: 20 };
@@ -59,7 +60,7 @@ function filter_by_ingredient(input){
       myObj = JSON.parse(this.responseText);
       for (x in myObj) {
         if(myObj[x].ingredient.includes(input)){
-          txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>" + myObj[x].nameOfDish + "</td></tr><tr><td>" + myObj[x].description + "</td></tr>";
+          txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Description<br>" + myObj[x].description + "</td></tr>";
         }
       }
       txt += "</table>";
