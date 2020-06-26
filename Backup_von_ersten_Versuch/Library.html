@@ -79,7 +79,7 @@ img{
         </div>
         <div class="column middle">
           <select id="myselect" onchange="change_myselect(this.value)">
-            <option value="none" selected disabled hidden>Choose an Foodtype:</option>
+            <option value="" selected disabled hidden>Choose an Foodtype:</option>
             <option value="fastFood">Fast Food</option>
             <option value="vegetarianFood">Vegetarian Food</option>
             <option value="asiaFood">Asia Food</option>
@@ -88,9 +88,6 @@ img{
             <option value="russianFood">Russian Food</option>
           </select>
 
-          <label for="ingredient">Ingredient:</label>
-          <input type="text" id="ingredient" name="ingredient">
-          <button onclick="filter_by_ingredient()">Submit</button>
           <p id="demo"></p>
 
           <script src="Library.js"></script>

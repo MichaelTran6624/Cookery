@@ -13,6 +13,13 @@
       "picture": "",
       "ingredients": "dough, cheese, onions",
       "id": 2
+    },
+    {
+      "nameOfDish": "dfsakfmask m mv",
+      "description": "lkjai dvxjcv jqw",
+      "picture": "",
+      "ingredients": "masmdfvxcm",
+      "id": 3
     }
   ],
   "vegetarianFood": [
@@ -20,7 +27,7 @@
       "nameOfDish": "Eierspeiß",
       "description": "Gut",
       "picture": "",
-      "ingredients":"lettuce, eggs",
+      "ingredients": "lettuce, eggs",
       "id": 1
     }
   ],
@@ -31,7 +38,7 @@
       "nameOfDish": "Curry",
       "description": "asyxcvafhaetqt",
       "picture": "",
-      "ingredients":"curry",
+      "ingredients": "curry",
       "id": 1
     }
   ],
