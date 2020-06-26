@@ -62,7 +62,7 @@ function filter(){
       for (x in myObj) {
         if(myObj[x].ingredients.includes(ingredient)){   
         txt += "<table border=2>"
-        txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Description<br>" + myObj[x].description + "</td></tr><br>";
+        txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Ingredients<br>" + myObj[x].ingredients + "</td></tr><tr><td>Description<br>" + myObj[x].description + "</td></tr><br>";
         txt += "</table>";
       }
     }
