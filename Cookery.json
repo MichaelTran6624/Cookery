@@ -13,13 +13,6 @@
       "picture": "",
       "ingredients": "dough, cheese, onions",
       "id": 2
-    },
-    {
-      "nameOfDish": "dfsakfmask m mv",
-      "description": "lkjai dvxjcv jqw",
-      "picture": "",
-      "ingredients": "masmdfvxcm",
-      "id": 3
     }
   ],
   "vegetarianFood": [
@@ -38,6 +31,13 @@
       "picture": "",
       "ingredients": "rice",
       "id": 1
+    },
+    {
+      "nameOfDish": "Noodle",
+      "description": "as fxcvqasg axvb",
+      "picture": "",
+      "ingredients": "noodle",
+      "id": 2
     }
   ],
   "veganFood": [],

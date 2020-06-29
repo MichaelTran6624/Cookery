@@ -66,14 +66,13 @@ function filter(){
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(this.responseText);
       for (x in myObj) {
-        var ingredients = myObj[x].ingredients;
-        if(ingredients.includes(ingredient) == true){   
+        if(myObj[x].ingredients.include(ingredient)){   
           txt += "<table border=2>"
           txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Ingredients<br>" + myObj[x].ingredients + "</td></tr><br><tr><td>Description<br>" + myObj[x].description + "</td></tr><br>";
           txt += "</table>";
         }
       }
-      document.getElementById("demo").innerHTML += txt;
+      document.getElementById("demo").innerHTML = txt;
     }
   };
   xmlhttp.open('GET', newurl,true); 
