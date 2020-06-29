@@ -4,6 +4,7 @@ var url = 'http://localhost:3000/';
 
 function initialize() {
   var select_myselect = document.getElementById("myselect").value = "";
+  var search = document.getElementById("search").value = "";
 
   select_myselect.selectIndex = 0;
 }
@@ -52,7 +53,7 @@ function change_myselect(sel) {
 function filter(){
   var obj, dbParam, xmlhttp, myObj, x,txt = "";
   var newurl = url + getElementById(myselect).value;
-  var ingredient = getElementById(ingredient);
+  var ingredient = getElementById(search);
   obj = { table: sel, limit: 20 };
   dbParam = JSON.stringify(obj);
   xmlhttp = new XMLHttpRequest();
@@ -60,12 +61,12 @@ function filter(){
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(this.responseText);
       for (x in myObj) {
-        if(myObj[x].ingredients.includes(ingredient)){   
-        txt += "<table border=2>"
-        txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Ingredients<br>" + myObj[x].ingredients + "</td></tr><tr><td>Description<br>" + myObj[x].description + "</td></tr><br>";
-        txt += "</table>";
+        if(myObj[x].ingredients.contains(ingredient)){   
+          txt += "<table border=2>"
+          txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Ingredients<br>" + myObj[x].ingredients + "</td></tr><tr><td>Description<br>" + myObj[x].description + "</td></tr><br>";
+          txt += "</table>";
+        }
       }
-    }
       document.getElementById("demo").innerHTML = txt;
     }
   };
