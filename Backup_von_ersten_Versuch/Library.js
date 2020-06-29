@@ -46,7 +46,7 @@ function change_myselect(sel) {
       myObj = JSON.parse(this.responseText);
       for (x in myObj) {
         txt += "<table border=2>"
-        txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Description<br>" + myObj[x].description + "</td></tr><br>";
+        txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Ingredients<br>" + myObj[x].ingredients + "</td></tr><br><tr><td>Description<br>" + myObj[x].description + "</td></tr><br>";
         txt += "</table>";
       }
       document.getElementById("demo").innerHTML = txt;
@@ -57,8 +57,8 @@ function change_myselect(sel) {
 }
 function filter(){
   var obj, dbParam, xmlhttp, myObj, x,txt = "";
-  var newurl = url + document.getElementById(myselect);
-  var ingredient = document.getElementById(search);
+  var newurl = url + document.getElementById("myselect").value;
+  var ingredient = document.getElementById("search").value;
   obj = { table: sel, limit: 20 };
   dbParam = JSON.stringify(obj);
   xmlhttp = new XMLHttpRequest();
@@ -66,9 +66,9 @@ function filter(){
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(this.responseText);
       for (x in myObj) {
-        if(myObj[x].ingredients.contains(ingredient)){   
+        if(myObj[x].ingredients.includes(ingredient)){   
           txt += "<table border=2>"
-          txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Ingredients<br>" + myObj[x].ingredients + "</td></tr><tr><td>Description<br>" + myObj[x].description + "</td></tr><br>";
+          txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Ingredients<br>" + myObj[x].ingredients + "</td></tr><br><tr><td>Description<br>" + myObj[x].description + "</td></tr><br>";
           txt += "</table>";
         }
       }
