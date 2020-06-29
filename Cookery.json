@@ -38,6 +38,20 @@
       "picture": "",
       "ingredients": "rice",
       "id": 1
+    },
+    {
+      "nameOfDish": "RICE",
+      "description": "l nlakvmsdfkmasdölvmaxv",
+      "picture": "",
+      "ingredients": "rice",
+      "id": 2
+    },
+    {
+      "nameOfDish": "Rice",
+      "description": "hscm,nv lkasnvlkaxcmvök",
+      "picture": "",
+      "ingredients": "rice",
+      "id": 3
     }
   ],
   "veganFood": [],

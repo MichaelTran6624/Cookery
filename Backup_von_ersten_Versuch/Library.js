@@ -3,28 +3,36 @@ var url = 'http://localhost:3000/';
 function initialize() {
   var select_myselect = document.getElementById("myselect").value = "";
   var search = document.getElementById("search").value = "";
+  var title = document.getElementById("title").value = "";
+  var picture = document.getElementById("picture").value = "";
+  var ingredients = document.getElementById("ingredients").value = "";
+  var description = document.getElementById("description").value = "";
 
   select_myselect.selectIndex = 0;
 }
 
 function submit(){
-    var myselect = document.getElementById("myselect");
-    var title = document.getElementById("title");
-    var description = document.getElementById("description");
-    var picture = document.getElementById("picture");
-    var ingredient = document.getElementById("ingredients");
-    var http = new XMLHttpRequest();
-    var newurl = url + myselect.value;
-    http.open('POST', newurl, true);
-    http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    http.onreadystatechange = function(){
-        if (http.readyState == 4 && http.status == 200){
-            alert(http.responseText);
-        }
-    }
+  var myselect = document.getElementById("myselect");
+  var title = document.getElementById("title");
+  var description = document.getElementById("description");
+  var picture = document.getElementById("picture");
+  var ingredient = document.getElementById("ingredients");
+  var http = new XMLHttpRequest();
+  var newurl = url + myselect.value;
+  http.open('POST', newurl, true);
+  http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  http.onreadystatechange = function(){
+      if (http.readyState == 4 && http.status == 200){
+          alert(http.responseText);
+      }
+  }
 
-    var data = "nameOfDish=" + title.value + "&description=" + description.value + "&picture=" + picture.value + "&ingredients=" + ingredients.value;
-    http.send(data);
+  var data = "nameOfDish=" + title.value + "&description=" + description.value + "&picture=" + picture.value + "&ingredients=" + ingredients.value;
+  http.send(data);
+  title = document.getElementById("title").value = "";
+  picture = document.getElementById("picture").value = "";
+  ingredients = document.getElementById("ingredients").value = "";
+  description = document.getElementById("description").value = "";
 }
 
 function change_myselect(sel) {
@@ -47,10 +55,10 @@ function change_myselect(sel) {
   xmlhttp.open('GET', newurl,true); 
   xmlhttp.send();
 }
-/*function filter(){
+function filter(){
   var obj, dbParam, xmlhttp, myObj, x,txt = "";
-  var newurl = url + getElementById(myselect).value;
-  var ingredient = getElementById(search);
+  var newurl = url + document.getElementById(myselect);
+  var ingredient = document.getElementById(search);
   obj = { table: sel, limit: 20 };
   dbParam = JSON.stringify(obj);
   xmlhttp = new XMLHttpRequest();
@@ -69,4 +77,4 @@ function change_myselect(sel) {
   };
   xmlhttp.open('GET', newurl,true); 
   xmlhttp.send();
-}*/
+}
