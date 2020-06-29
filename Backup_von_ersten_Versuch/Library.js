@@ -29,10 +29,7 @@ function submit(){
 
   var data = "nameOfDish=" + title.value + "&description=" + description.value + "&picture=" + picture.value + "&ingredients=" + ingredients.value;
   http.send(data);
-  title = document.getElementById("title").value = "";
-  picture = document.getElementById("picture").value = "";
-  ingredients = document.getElementById("ingredients").value = "";
-  description = document.getElementById("description").value = "";
+  initialize();
 }
 
 function change_myselect(sel) {
@@ -59,14 +56,15 @@ function filter(){
   var obj, dbParam, xmlhttp, myObj, x,txt = "";
   var newurl = url + document.getElementById("myselect").value;
   var ingredient = document.getElementById("search").value;
-  obj = { table: sel, limit: 20 };
+  obj = { table: document.getElementById("myselect").value, limit: 20 };
   dbParam = JSON.stringify(obj);
   xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(this.responseText);
-      for (x in myObj) {
-        if(myObj[x].ingredients.include(ingredient)){   
+      
+      for (x in myObj) { 
+        if(myObj[x].ingredients.includes(ingredient) === true){
           txt += "<table border=2>"
           txt += "<tr><td><img src=\"" + myObj[x].picture + "\"></tr></td><tr><td>Name<br>" + myObj[x].nameOfDish + "</td></tr><tr><td>Ingredients<br>" + myObj[x].ingredients + "</td></tr><br><tr><td>Description<br>" + myObj[x].description + "</td></tr><br>";
           txt += "</table>";

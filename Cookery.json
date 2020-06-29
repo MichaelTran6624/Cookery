@@ -10,7 +10,7 @@
     {
       "nameOfDish": "Pizza",
       "description": "good",
-      "picture": "",
+      "picture": "https://www.delonghi.com/Global/recipes/multifry/pizza_fresca.jpg",
       "ingredients": "dough, cheese, onions",
       "id": 2
     }
@@ -19,33 +19,19 @@
     {
       "nameOfDish": "Eierspeiß",
       "description": "Gut",
-      "picture": "",
+      "picture": "https://www.gutekueche.at/img/rezept/28449/eierspeis-mit-kase.jpg",
       "ingredients": "lettuce, eggs",
       "id": 1
     }
   ],
   "asiaFood": [
-    {
-      "nameOfDish": "Rice",
-      "description": "a sdfasklcvmalösmvasv",
-      "picture": "",
-      "ingredients": "rice",
-      "id": 1
-    },
-    {
-      "nameOfDish": "Noodle",
-      "description": "as fxcvqasg axvb",
-      "picture": "",
-      "ingredients": "noodle",
-      "id": 2
-    }
   ],
   "veganFood": [],
   "indianFood": [
     {
       "nameOfDish": "Curry",
       "description": "asyxcvafhaetqt",
-      "picture": "",
+      "picture": "https://img.chefkoch-cdn.de/rezepte/1582261265704130/bilder/1259126/crop-960x540/chicken-curry.jpg",
       "ingredients": "curry",
       "id": 1
     }
