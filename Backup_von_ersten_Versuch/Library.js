@@ -1,5 +1,3 @@
-const { get } = require("jquery");
-
 var url = 'http://localhost:3000/';
 
 function initialize() {
@@ -49,8 +47,7 @@ function change_myselect(sel) {
   xmlhttp.open('GET', newurl,true); 
   xmlhttp.send();
 }
-
-function filter(){
+/*function filter(){
   var obj, dbParam, xmlhttp, myObj, x,txt = "";
   var newurl = url + getElementById(myselect).value;
   var ingredient = getElementById(search);
@@ -72,4 +69,4 @@ function filter(){
   };
   xmlhttp.open('GET', newurl,true); 
   xmlhttp.send();
-}
+}*/

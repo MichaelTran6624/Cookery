@@ -31,7 +31,15 @@
       "id": 1
     }
   ],
-  "asiaFood": [],
+  "asiaFood": [
+    {
+      "nameOfDish": "Rice",
+      "description": "a sdfasklcvmalösmvasv",
+      "picture": "",
+      "ingredients": "rice",
+      "id": 1
+    }
+  ],
   "veganFood": [],
   "indianFood": [
     {
