@@ -13,6 +13,13 @@
       "picture": "https://www.delonghi.com/Global/recipes/multifry/pizza_fresca.jpg",
       "ingredients": "dough, cheese, onions",
       "id": 2
+    },
+    {
+      "nameOfDish": "Pizza",
+      "description": "Step 1  Place pizza stone on grill directly over wood fire. You may need to begin by spreading out the wood if the flames are too tall. Roll out the pizza dough to desired thickness. Place it on the pizza stone and cook 10 minutes on one side until golden. Step 2  Remove from the fire and on the cooked side, spread the pizza sauce in an even layer over dough leaving about a half inch around the rim of the pizza dough bare. Sprinkle mozzarella cheese evenly on top of the sauce, followed by the pepperoni slices. Step 3  Place uncooked side down, back on the pizza stone. Cover with a foil tent and cook until cheese has melted, about 10 minutes more. Transfer pizza to a cutting board and let cool slightly before cutting and serving.",
+      "picture": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https://images.media-allrecipes.com/userphotos/1130239.jpg",
+      "ingredients": "1 pound refrigerated pizza dough ¼ cup pizza sauce ½ cup shredded mozzarella cheese ½ cup sliced pepperoni ",
+      "id": 3
     }
   ],
   "vegetarianFood": [
@@ -24,9 +31,16 @@
       "id": 1
     }
   ],
-  "asiaFood": [
+  "asiaFood": [],
+  "veganFood": [
+    {
+      "nameOfDish": "fdxgcfhvjnlm",
+      "description": "dxcfghv jbklö",
+      "picture": "",
+      "ingredients": "xdgfchvjbknl",
+      "id": 1
+    }
   ],
-  "veganFood": [],
   "indianFood": [
     {
       "nameOfDish": "Curry",

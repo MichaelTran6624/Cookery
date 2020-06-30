@@ -2,11 +2,11 @@ var url = 'http://localhost:3000/';
 
 function initialize() {
   var select_myselect = document.getElementById("myselect").value = "";
-  var search = document.getElementById("search").value = "";
-  var title = document.getElementById("title").value = "";
-  var picture = document.getElementById("picture").value = "";
-  var ingredients = document.getElementById("ingredients").value = "";
-  var description = document.getElementById("description").value = "";
+  var search = document.getElementById("search") = "";
+  var title = document.getElementById("title") = "";
+  var picture = document.getElementById("picture")= "";
+  var ingredients = document.getElementById("ingredients") = "";
+  var description = document.getElementById("description") = "";
 
   select_myselect.selectIndex = 0;
 }
@@ -27,7 +27,7 @@ function submit(){
       }
   }
 
-  var data = "nameOfDish=" + title.value + "&description=" + description.value + "&picture=" + picture.value + "&ingredients=" + ingredients.value;
+  var data = "nameOfDish=" + title.value + "&description=" + description.value + "&picture=" + picture.value + "&ingredients=" + ingredients.value; 
   http.send(data);
   initialize();
 }
